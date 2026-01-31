@@ -9,5 +9,15 @@ class Main {
         System.out.println("Enter your name");
         String b = sc1.nextLine();
         System.out.println("Given name is " +b);
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Enter the temp in feh");
+       Double feh = sc2.nextDouble();
+       convertIntoCesius(feh);
     }
+public static void convertIntoCesius(Double feh)
+        {
+        Double cel = (5 *(feh -32)/9);
+        System.out.println("Celsius temp is : " +cel);
+        }
 }
+
