@@ -1,0 +1,25 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+     public static void main(String [] args)
+     {
+         
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter three numbers");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        Main obj = new Main();
+       obj.addNumbers(a,b,c);
+        
+        
+     }
+     
+     public void addNumbers(int a , int b, int c)
+     {
+          int sum = a+b+c;
+       System.out.println("sum of three numbers " +sum);
+     }
+}
+
