@@ -1,0 +1,29 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+     public static void main(String [] args)
+     {
+         
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter marks for each subjects out of 100");
+        int EngMarks = sc.nextInt();
+        int HinMarks = sc.nextInt();
+        int MathMarks = sc.nextInt();
+        int SciMarks = sc.nextInt();
+        int SSTMarks = sc.nextInt();
+        Main obj = new Main();
+       obj.calPercenatge(EngMarks,HinMarks,MathMarks, SciMarks,SSTMarks );
+        
+        
+     }
+     
+     public void calPercenatge(int a , int b, int c , int d, int e)
+     {
+          int sum = a+b+c+d+e;
+          System.out.println(sum);
+          int calper = (sum*100)/500;
+       System.out.println("Percentage is " +calper);
+     }
+}
+
