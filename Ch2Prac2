@@ -1,0 +1,43 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Ch2Prac2 {
+     public static void main(String [] args)
+     {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter your income");
+     int m1 = sc.nextInt();
+      float tax= 0.0f;
+     float taxDeduction= 0.0f;
+     if ( m1 <= 250000)
+     {
+         tax =0;
+         taxDeduction= (m1 * tax)/100;
+         System.out.println("You taxpayable amount is" +taxDeduction);
+     }
+     else if (250000 < m1 || m1<= 500000)
+     {
+         tax=5;
+         taxDeduction=  (m1 * tax)/100;
+         System.out.println("You taxpayable amount is" +taxDeduction);
+     }
+     else if(500000 < m1 || m1<= 700000)
+     {
+          tax=7;
+         taxDeduction= (m1 * tax)/100;
+         System.out.println("You taxpayable amount is" +taxDeduction);
+     }
+     else
+     {
+       tax=12;
+       taxDeduction= (m1 * tax)/100; 
+       System.out.println("You taxpayable amount is" +taxDeduction);
+     }
+    
+    float netIncome =m1-taxDeduction;
+    System.out.println("You income after tax deduction is : " + netIncome);
+     
+     
+     }
+}
+
