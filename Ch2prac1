@@ -1,0 +1,27 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Ch2prac1 {
+     public static void main(String [] args)
+     {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter marks of physics");
+     int m1 = sc.nextShort();
+      System.out.println("Enter marks of chemistry");
+     int m2 = sc.nextShort();
+      System.out.println("Enter marks of maths");
+     int m3 = sc.nextShort();
+     
+     int avg = (m1+m2+m3)/3;
+     System.out.println("Avergae of marks :" +avg);
+     
+     if(avg>=45 && m1 >= 33 && m2 >= 33 && m3 >= 33)
+     {
+         System.out.println("Congratulation you are pass");
+     }
+     else {
+         System.out.println("Sorry you are fail");
+     }
+     }
+}
+
