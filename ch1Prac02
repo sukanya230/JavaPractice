@@ -1,0 +1,21 @@
+import java.util.*;
+class Main {
+     public static void main(String [] args)
+     {
+        String name = "Sukanya";
+        int value = name.length();
+        System.out.println("length of string :"+value);
+        String lstring= name.toLowerCase();
+        System.out.println("lowercase String " +lstring);
+        String ustring = name.toUpperCase();
+        System.out.println("uppercase string " +ustring);
+        String nontrimString ="     SUKANYA    ";
+        System.out.println(nontrimString);
+        System.out.println("trimmed string "+nontrimString.trim());
+        
+        
+        
+     }
+     
+}
+
